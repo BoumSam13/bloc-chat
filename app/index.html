@@ -4,15 +4,46 @@
     <meta charset="UTF-8">
     <title>Bloc Chat</title>
      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
+     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+     <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+     <link rel="stylesheet" type="text/css" href="/styles/main.css">
+     <link rel="stylesheet" type="text/css" href="/styles/landing.css">
+     <link rel="stylesheet" type="text/css" href="/styles/rooms.css">
 </head>
 <body>
-    <script src="/scripts/app.js"></script>
+     <nav class="navbar">   <!-- navigation bar -->
+        <a ui-sref="landing" class="logo">
+            <span>Bloc <br>
+            Chat</span>
+        </a>
+        <div class="links-container">
+            <a ui-sref="rooms" class="navbar-link">chat rooms</a>
+        </div>
+    </nav>
+    
+    <ui-view></ui-view>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    
+    <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    
+    <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    
+    <!-- Ui Router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/services/Room.js"></script>
+    <script src="/scripts/controllers/LandingCtrl.js"></script>
+    <script src="/scripts/controllers/RoomCtrl.js"></script>
+    
     <script>
       // Initialize Firebase
       var config = {

@@ -1,0 +1,35 @@
+.rooms {
+    background-image: url("../assets/images/clouds.jpg");
+    height: 1500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.roomsForm
+{
+    background-color: rgba(52, 43, 34, 0.4);
+    height: 1500px;
+    width: 20%;
+}
+
+#chatTitle
+{
+    padding-top: 20px;
+    margin-left: 5%;
+    font-size: 22px;
+    font-family: Arial, Helevetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+#room
+{
+    padding-top: 20px;
+    margin-left: 10%;
+    font-size: 16px;
+    font-family: Arial, Helevetica, sans-serif;
+    color: rgb(224, 148, 60);
+}

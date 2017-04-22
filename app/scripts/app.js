@@ -5,6 +5,18 @@
                 enabled: true,
                 requireBase: false
             });
+        
+        $stateProvider
+            .state('landing', {
+                url: '/',
+                controller: 'LandingCtrl as landing',
+                templateUrl: '/templates/landing.html'
+            })
+            .state('rooms', {
+                url: '/rooms',
+                controller: 'RoomCtrl as rooms',
+                templateUrl: '/templates/rooms.html'
+            });
     }
     
     angular
