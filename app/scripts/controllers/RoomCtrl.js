@@ -6,8 +6,8 @@
             $uibModal.open({
                 ariaLabelledBy: 'modal-title',
                 ariaDescribedBy: 'modal-body',
-                templateUrl: 'roomsModal.html',
-                controller: 'ModalCtrl',
+                templateUrl: '/templates/modal.html',
+                controller: 'ModalCtrl as modal',
             })
         };
     }
