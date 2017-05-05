@@ -8,15 +8,13 @@
     background-size: cover;
 }
 
-.roomsForm
-{
+.roomsForm {
     background-color: rgba(52, 43, 34, 0.4);
     height: 1500px;
     width: 20%;
 }
 
-#chatTitle
-{
+#chatTitle {
     padding-top: 20px;
     margin-left: 5%;
     font-size: 22px;
@@ -25,11 +23,47 @@
     font-weight: bold;
 }
 
-#room
-{
+#chatRoom {
     padding-top: 20px;
     margin-left: 10%;
     font-size: 16px;
     font-family: Arial, Helevetica, sans-serif;
     color: rgb(224, 148, 60);
 }
+
+#createRoom {
+    padding-top: 20px;
+}
+
+#modalButton {
+    margin-left: 10%;
+    background-color: #fff;
+    border: 1px solid #e0943c;
+    color: #000;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 8px 15px;
+    -webkit-appearance: none;
+    box-shadow: none;
+    border-style: solid;
+    -webkit-transition: all .5s; /* Safari */
+    -webkit-appearance: none;
+    transition: all .5s;
+}
+
+#modalButton:hover {
+    background-color: #e0943c;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.modal-title {
+    color: black;
+}
+
+.modal-body {
+    color: black;
+}
+
+
+ 
