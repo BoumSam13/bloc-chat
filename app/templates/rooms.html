@@ -2,7 +2,7 @@
     <section class="roomsForm">
         <p id="chatTitle">Chat Rooms</p>
         <div id="chatRoom" ng-repeat="room in rooms.rooms">
-            {{ room.$value }}
+            {{ room.name }}
         </div>
         
         <div ng-controller="RoomCtrl as room" id="createRoom">
@@ -10,24 +10,6 @@
                 Create Chat Room
             </button>  
         </div>
-        
-<!--
-        <script type="text/ng-template" id="roomsModal.html">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Create a new chat room!</h3>
-                </div>
-                <div class="modal-body">Name: 
-                    <br/>
-                    <input type="text" ng-model="newRoomName" />
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
-                    <button class="btn btn-primary" type="button" ng-click="create()">Create</button>
-                </div>
-            </div>  
-        </script>
--->
     </section>
 </section>
 
