@@ -8,10 +8,33 @@
     background-size: cover;
 }
 
+.fullForm {
+    height: 1500px;
+    width: 100%;
+}
+
 .roomsForm {
+    position: relative;
+    float: left;
     background-color: rgba(52, 43, 34, 0.4);
     height: 1500px;
     width: 20%;
+}
+
+.chatCont {
+    display: block;
+    float: right;
+    /*background-color: rgba(147, 138, 138, 0.7);*/
+    /*background-color: rgba(4, 0, 0, 0.2);*/
+    width: 80%;
+} 
+
+#roomName {
+    margin-left: 5%;
+    font-size: 22px;
+    font-size: Arial, Heletica, sans-serif;
+    color: white;
+    font-weight: bold;
 }
 
 #chatTitle {
@@ -29,6 +52,23 @@
     font-size: 16px;
     font-family: Arial, Helevetica, sans-serif;
     color: rgb(224, 148, 60);
+}
+
+#chatRoom:hover {
+    color: white;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.chatTable tr:nth-child(odd) {
+    background-color: rgba(147, 138, 138, 0.6);
+}
+
+.chatTD {
+    padding-left: 5%;
+    font-size: 16px;
+    font-family: Arial, Helevetica, sans-serif;
+    color: black;
 }
 
 #createRoom {
@@ -57,15 +97,6 @@
     cursor: hand;
 }
 
-/*
-.modal-title {
-    color: black;
-}
-
-.modal-body {
-    color: black;
-}
-*/
 
 
  
