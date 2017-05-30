@@ -3,7 +3,8 @@
         this.setUsername = function() {
             if ((this.newUsername != undefined) && (this.newUsername !== ""))
             {
-                $cookies.blocChatCurrentUser = this.newUsername;
+                //$cookies.blocChatCurrentUser = this.newUsername;
+                $cookies.put('blocChatCurrentUser', this.newUsername);
                 $uibModalInstance.close();
             }
         };
