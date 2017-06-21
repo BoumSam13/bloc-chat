@@ -1,9 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
 <section class="rooms" ng-controller="RoomCtrl as roomCtrl">
     <section class="roomsForm">
         <p id="chatTitle">Chat Rooms</p>
 
         <div id="chatRoom" ng-repeat="room in rooms.rooms">
-            <div ng-click="roomCtrl.setCurrentRoom(room)">{{ room.name }}</div>
+            <div ng-click="roomCtrl.setCurrentRoom(room)" ng-class="{chatRoomActive : room.$id == roomCtrl.currentRoom.$id}">{{ room.name }}</div>
         </div>
         
         <div id="createRoom">
@@ -30,8 +37,14 @@
                 </td>
             </tr>
         </table>
+        <div class="messageCont">
+            <textarea id="messageTextArea" type="text" name="messageField" ng-show="roomCtrl.currentRoom.name" ng-model="roomCtrl.newMessage"></textarea>
+            <input id="messageButton" type="submit" value="Send Message" ng-show="roomCtrl.currentRoom.name" ng-click="roomCtrl.sendMessage()">
+        </div>
     </section>
 </section>
+</body>
+</html>
 
 
 
